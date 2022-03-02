@@ -1,3 +1,3 @@
+Regex_Pattern = r'^[1-3][120][xs0][30Aa][xsu][.,]$'	
 import re
-Regex_Pattern = r'(\S{2}\s){2}\S{2}'
 print(str(bool(re.search(Regex_Pattern, input()))).lower())
