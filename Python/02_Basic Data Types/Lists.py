@@ -68,5 +68,3 @@ if __name__ == '__main__':
             l.append(int(c[1]))
         if cmd=="reverse":
             l.reverse()
-
-#Lists in Python- HackerRank Solution
