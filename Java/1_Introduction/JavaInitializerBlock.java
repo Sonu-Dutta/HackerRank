@@ -1,33 +1,25 @@
-// // public class JavaInitializerBlock {
-    
-// // }
-// import java.io.*;
-// import java.util.*;
-// import java.text.*;
-// import java.math.*;
-// import java.util.regex.*;
+import java.util.Scanner;
 
-// public class Solution {
-// static int B,H;
-// static boolean flag=false;
-// static{
+public class JavaInitializerBlock {
+static int B,H;
+static boolean flag=false;
+static{
     
-//     Scanner s=new Scanner(System.in);
-//     B=s.nextInt();
-//     H=s.nextInt();
-    
-//     if(B>0&&H>0)
-//         flag=true;
-//     else
-//         System.out.println("java.lang.Exception: Breadth and height must be positive");
-// }
+    Scanner s=new Scanner(System.in);
+    B=s.nextInt();
+    H=s.nextInt();
+    s.close();
 
-// public static void main(String[] args){
-// 		if(flag){
-// 			int area=B*H;
-// 			System.out.print(area);
-// 		}
-		
-// 	}//end of main
+    if(B>0&&H>0)
+        flag=true;
+    else
+        System.out.println("java.lang.Exception: Breadth and height must be positive");
+}
 
-// }//end of class
+public static void main(String[] args){
+		if(flag){
+			int area=B*H;
+			System.out.print(area);
+		}		
+	}
+}
