@@ -1,27 +1,31 @@
 import java.util.*;
-
+import java.util.Scanner;
 public class JavaArrayList {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        String s = sc.nextLine();
-        ArrayList<ArrayList<String>> a = new ArrayList<ArrayList<String>>(n);
-        for (int i = 0; i < n; i++) {
-            s = sc.nextLine();
-            a.add(i, new ArrayList<String>(Arrays.asList(s.split("\\s"))));
+        ArrayList[] arrayLists=new ArrayList[20000];
+        for(int i=0;i<n;i++){
+            arrayLists[i]= new ArrayList<>();
+            int d=sc.nextInt();
+            for(int j=0;j<d;j++){
+                int value=sc.nextInt();
+                arrayLists[i].add(value);
+            }
         }
-
-        int m = sc.nextInt();
-        for (int i = 0; i < m; i++) {
-            int x = sc.nextInt();
-            int y = sc.nextInt();
-            if (x <= a.size() && y < a.get(x-1).size() && y >= 0) {
-                System.out.println(a.get(x-1).get(y));
-            } else {
+        int q=sc.nextInt();
+        for(int i=0;i<q;i++){
+            int row=sc.nextInt();
+            int column=sc.nextInt();
+            try{
+            System.out.println(arrayLists[row-1].get(column-1));
+            }
+            catch(Exception e){
                 System.out.println("ERROR!");
             }
         }
+       
         sc.close();
     }
 }
