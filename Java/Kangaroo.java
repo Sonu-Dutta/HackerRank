@@ -4,30 +4,30 @@
 // import java.io.IOException;
 // import java.io.InputStreamReader;
 
-class Result {
+// class Result {
 
-    /*
-     * Complete the 'kangaroo' function below.
-     *
-     * The function is expected to return a STRING.
-     * The function accepts following parameters:
-     *  1. INTEGER x1
-     *  2. INTEGER v1
-     *  3. INTEGER x2
-     *  4. INTEGER v2
-     */
+//     /*
+//      * Complete the 'kangaroo' function below.
+//      *
+//      * The function is expected to return a STRING.
+//      * The function accepts following parameters:
+//      *  1. INTEGER x1
+//      *  2. INTEGER v1
+//      *  3. INTEGER x2
+//      *  4. INTEGER v2
+//      */
 
-    public static String kangaroo(int x1, int v1, int x2, int v2) {
-        if(v1>v2){
-            int remainder =(x1-x2)%(v2-v1);
-            if(remainder ==0){
-                return "YES";
-            }
-        }
-        return "NO";
-    }
+//     public static String kangaroo(int x1, int v1, int x2, int v2) {
+//         if(v1>v2){
+//             int remainder =(x1-x2)%(v2-v1);
+//             if(remainder ==0){
+//                 return "YES";
+//             }
+//         }
+//         return "NO";
+//     }
 
-}
+// }
 
 // public class Solution {
 //     public static void main(String[] args) throws IOException {
