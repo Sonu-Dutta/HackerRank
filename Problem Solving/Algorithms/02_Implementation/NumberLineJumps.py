@@ -18,4 +18,5 @@ if __name__ == '__main__':
     x2 = int(first_multiple_input[2])
 
     v2 = int(first_multiple_input[3])
+    
     print(kangaroo(x1, v1, x2, v2))
